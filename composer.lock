@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2bbc4e4e4d432259f4297fd2d96ec9c",
+    "content-hash": "7c588ad096a6b6006b88b0b031c76daf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -491,6 +491,11 @@
         {
             "name": "drupal/core",
             "version": "11.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core.git",
+                "reference": "0f9b2c320c20d0cbafef18764fac8e957a84071f"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core/zipball/0f9b2c320c20d0cbafef18764fac8e957a84071f",
@@ -649,16 +654,16 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core.git",
-                "reference": "0f9b2c320c20d0cbafef18764fac8e957a84071f"
-            }
+            "description": "Drupal is an open source content management platform powering millions of websites and applications."
         },
         {
             "name": "drupal/core-composer-scaffold",
             "version": "11.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-composer-scaffold.git",
+                "reference": "30e2dce1d08858236ae2703c0a72d120d8075bc5"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/30e2dce1d08858236ae2703c0a72d120d8075bc5",
@@ -694,16 +699,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "30e2dce1d08858236ae2703c0a72d120d8075bc5"
-            }
+            ]
         },
         {
             "name": "drupal/core-project-message",
             "version": "11.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-project-message.git",
+                "reference": "d1da83722735cb0f7ccabf9fef7b5607b442c3a8"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-project-message/zipball/d1da83722735cb0f7ccabf9fef7b5607b442c3a8",
@@ -730,16 +735,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-project-message.git",
-                "reference": "d1da83722735cb0f7ccabf9fef7b5607b442c3a8"
-            }
+            ]
         },
         {
             "name": "drupal/core-recommended",
             "version": "11.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-recommended.git",
+                "reference": "b4ee05b115b4c74ff1417e3ed0a49b78158db444"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-recommended/zipball/b4ee05b115b4c74ff1417e3ed0a49b78158db444",
@@ -811,16 +816,16 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "b4ee05b115b4c74ff1417e3ed0a49b78158db444"
-            }
+            "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
         },
         {
             "name": "drupal/core-vendor-hardening",
             "version": "11.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-vendor-hardening.git",
+                "reference": "8fe818ea278f5ff612ad079bf134a6a02790f7a3"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/8fe818ea278f5ff612ad079bf134a6a02790f7a3",
@@ -847,11 +852,54 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
+            ]
+        },
+        {
+            "name": "drupal/tragedy_commons",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drupal/core-vendor-hardening.git",
-                "reference": "8fe818ea278f5ff612ad079bf134a6a02790f7a3"
+                "url": "https://git.drupalcode.org/project/tragedy_commons.git",
+                "reference": "1.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tragedy_commons-1.0.4.zip",
+                "reference": "1.0.4",
+                "shasum": "efc72461cc89946bb2ab5c6689fd1536a4d8fbd5"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
+            },
+            "require-dev": {
+                "drush/drush": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.4",
+                    "datestamp": "1730428673",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dmundra",
+                    "homepage": "https://www.drupal.org/user/866436"
+                }
+            ],
+            "description": "Provides games that illustrate the tragedy of the commons.",
+            "homepage": "https://www.drupal.org/project/tragedy_commons",
+            "support": {
+                "source": "http://cgit.drupalcode.org/tragedy_commons",
+                "issues": "http://drupal.org/project/issues/tragedy_commons"
             }
         },
         {
@@ -4787,8 +4835,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "platform-overrides": {
-        "php": "8.3.0"
-    },
     "plugin-api-version": "2.6.0"
 }
