@@ -20,6 +20,8 @@
         "drupal/core-project-message": "^11.1",
         "drupal/core-recommended": "^11.1",
         "drupal/core-vendor-hardening": "^11.1",
+        "drupal/recaptcha": "^3.4",
+        "drupal/smtp": "^1.4",
         "drupal/tragedy_commons": "^1.0"
     },
     "conflict": {
