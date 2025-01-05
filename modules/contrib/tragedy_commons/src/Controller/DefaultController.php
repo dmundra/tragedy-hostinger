@@ -58,11 +58,12 @@ class DefaultController extends ControllerBase {
     ];
 
     $output['single'] = [
-      '#type' => 'details',
-      '#title' => 'Single person games',
+      '#type' => 'html_tag',
+      '#tag' => 'h3',
+      '#value' => 'Single person games',
     ];
 
-    $output['single']['list'] = [
+    $output['single_list'] = [
       '#theme' => 'item_list',
       '#list_type' => 'ul',
       '#items' => [
@@ -76,11 +77,12 @@ class DefaultController extends ControllerBase {
     ];
 
     $output['multi-into'] = [
-      '#type' => 'details',
-      '#title' => 'Setting up the Multi-person Tragedy of the Commons game',
+      '#type' => 'html_tag',
+      '#tag' => 'h3',
+      '#value' => 'Setting up the Multi-person Tragedy of the Commons game',
     ];
 
-    $output['multi-into']['list'] = [
+    $output['multi-into_list'] = [
       '#theme' => 'item_list',
       '#list_type' => 'ul',
       '#items' => [
@@ -94,8 +96,9 @@ class DefaultController extends ControllerBase {
     ];
 
     $output['multi-play'] = [
-      '#type' => 'details',
-      '#title' => 'Playing the Multi-person Tragedy of the Commons game',
+      '#type' => 'html_tag',
+      '#tag' => 'h3',
+      '#value' => 'Playing the Multi-person Tragedy of the Commons game',
     ];
 
     $multi_player_form = $this->formBuilder->getForm('Drupal\tragedy_commons\Form\MultiPlayerForm');
@@ -110,7 +113,7 @@ class DefaultController extends ControllerBase {
       $this->t('If there is a problem with the multi-person version, email me at <a href="mailto:rmitchel@uoregon.edu">rmitchel@uoregon.edu</a>.'),
     ];
 
-    $output['multi-play']['list'] = [
+    $output['multi-play_list'] = [
       '#theme' => 'item_list',
       '#list_type' => 'ul',
       '#items' => $items,

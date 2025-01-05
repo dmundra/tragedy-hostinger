@@ -3,9 +3,9 @@ type: module
 description: 'Illustrate the tragedy of the commons'
 configure: tragedy_commons.config_form
 core_version_requirement: ^10 || ^11
-package: Development
+package: Tragedy of the commons
 
-# Information added by Drupal.org packaging script on 2025-01-04
-version: '1.0.6'
+# Information added by Drupal.org packaging script on 2025-01-05
+version: '1.0.7'
 project: 'tragedy_commons'
-datestamp: 1736011001
+datestamp: 1736105824
