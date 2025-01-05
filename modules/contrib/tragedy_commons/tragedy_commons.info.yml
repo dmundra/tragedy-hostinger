@@ -6,6 +6,6 @@ core_version_requirement: ^10 || ^11
 package: Tragedy of the commons
 
 # Information added by Drupal.org packaging script on 2025-01-05
-version: '1.0.7'
+version: '1.0.8'
 project: 'tragedy_commons'
-datestamp: 1736105824
+datestamp: 1736108241
