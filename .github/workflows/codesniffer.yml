@@ -1,9 +1,9 @@
 name: Code sniffer custom modules/themes.
-
 permissions:
   contents: read
 
 on: [push]
+
 jobs:
   build:
     name: Install dependencies and run phpcs.
